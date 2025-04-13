@@ -71,16 +71,21 @@
     }
 
     .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1rem;
+      justify-items: center;
     }
 
     .gallery img {
-      max-width: 280px;
+      width: 100%;
+      border-radius: 12px;
       border: 2px solid var(--gold);
-      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
     }
 
     footer {
@@ -131,20 +136,27 @@
   </section>
 
   <section class="section" id="gallery">
-    <h2>Gallery</h2>
+    <h2>Our Instagram Gallery</h2>
     <div class="gallery">
-      <img src="https://tse3.mm.bing.net/th?id=OIP.rtUWuZz2qYATMtOksvQp9QHaJ4&pid=Api" alt="Wedding Floral">
-      <img src="https://tse1.mm.bing.net/th?id=OIP.8u7pGXOD0J8vdUNw9VyTbwHaJ4&pid=Api" alt="Event Setup">
-      <img src="https://tse4.mm.bing.net/th?id=OIP.2eU3XVGLZW0IQbeezvVzzgHaJ4&pid=Api" alt="Seasonal Bouquet">
+      <img src="https://yourdomain.com/img1.jpg" alt="Blooming Event 1" />
+      <img src="https://yourdomain.com/img2.jpg" alt="Blooming Event 2" />
+      <img src="https://yourdomain.com/img3.jpg" alt="Blooming Event 3" />
     </div>
+    <p style="text-align:center; margin-top:1rem;">
+      <a href="https://www.instagram.com/bloomingevents.lndn/" target="_blank">See More on Instagram</a>
+    </p>
   </section>
 
   <section class="section" id="contact">
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:info@bloomingevents.com">info@bloomingevents.com</a></p>
-    <p>Phone: (123) 456-7890</p>
-    <p>Instagram: <a href="https://www.instagram.com/bloomingevents.lndn/" target="_blank">@bloomingevents.lndn</a></p>
-    <p>Location: London, Ontario, Canada</p>
+    <p>We’d love to hear from you!</p>
+    <p>📸 Reach out on Instagram:</p>
+    <p>
+      <a href="https://www.instagram.com/bloomingevents.lndn/" target="_blank" style="font-weight: bold; font-size: 1.2rem;">
+        @bloomingevents.lndn
+      </a>
+    </p>
+    <p>Based in London, Ontario, Canada</p>
   </section>
 
   <footer>
