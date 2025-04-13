@@ -5,64 +5,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blooming Events</title>
   <style>
+    :root {
+      --gold: #C6A872;
+      --champagne: #F4ECE3;
+      --rose-gold: #7B5B45;
+      --charcoal: #3E2C23;
+      --creamy-white: #FAF8F4;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Georgia', serif;
       margin: 0;
-      padding: 0;
-      background-color: #f7f7f7;
+      background-color: var(--creamy-white);
+      color: var(--charcoal);
     }
+
     header {
-      background-color: #004080;
-      color: white;
-      padding: 1rem 2rem;
+      background-color: var(--champagne);
+      color: var(--rose-gold);
       text-align: center;
-    }
-    nav {
-      background-color: #003366;
-      padding: 0.5rem 2rem;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-    }
-    .hero {
-      padding: 3rem 2rem;
-      background-color: #e0eaff;
-      text-align: center;
-    }
-    .hero h1 {
-      margin-bottom: 1rem;
-    }
-    .section {
       padding: 2rem;
-      background-color: white;
-      margin: 1rem auto;
-      max-width: 900px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
-    footer {
-      background-color: #004080;
-      color: white;
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      background-color: var(--charcoal);
       text-align: center;
       padding: 1rem;
-      margin-top: 2rem;
     }
-    .gallery img {
-      width: 100%;
-      max-width: 300px;
-      margin: 0.5rem;
+
+    nav a {
+      color: var(--gold);
+      margin: 0 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
     }
+
+    .hero {
+      background-color: var(--champagne);
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: var(--rose-gold);
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: white;
+      border-left: 8px solid var(--gold);
+      box-shadow: 0 0 10px rgba(0,0,0,0.03);
+    }
+
+    .section h2 {
+      color: var(--rose-gold);
+    }
+
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      gap: 1rem;
+    }
+
+    .gallery img {
+      max-width: 280px;
+      border: 2px solid var(--gold);
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: var(--charcoal);
+      color: var(--champagne);
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    a {
+      color: var(--rose-gold);
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Blooming Events</h1>
     <p>Turning your inspiration into reality</p>
@@ -70,50 +105,51 @@
 
   <nav>
     <a href="#services">Services</a>
-    <a href="#about">About Us</a>
+    <a href="#about">About</a>
     <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <div class="hero">
-    <h1>Welcome to Blooming Events</h1>
-    <p>We specialize in creating bespoke event designs that bring your vision to life.</p>
-  </div>
+  <section class="hero">
+    <h1>Elegant Designs. Memorable Moments.</h1>
+    <p>Specializing in bespoke floral & event design in London, ON</p>
+  </section>
 
-  <div class="section" id="services">
+  <section class="section" id="services">
     <h2>Our Services</h2>
     <ul>
-      <li>Event Design</li>
-      <li>Wedding Décor</li>
-      <li>Bespoke Floral Creations</li>
+      <li>Event Styling & Design</li>
+      <li>Floral Arrangements</li>
+      <li>Weddings & Engagements</li>
+      <li>Custom Decor Packages</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section" id="about">
+  <section class="section" id="about">
     <h2>About Us</h2>
-    <p>At Blooming Events, we are passionate about transforming spaces to reflect your unique style and preferences. Our team works closely with clients to ensure every detail is meticulously planned and executed.</p>
-  </div>
+    <p>We’re a boutique event design company bringing sophistication, creativity, and beauty to each celebration. Every detail is carefully curated to reflect your vision, with floral arrangements and decor that elevate your experience.</p>
+  </section>
 
-  <div class="section" id="gallery">
+  <section class="section" id="gallery">
     <h2>Gallery</h2>
     <div class="gallery">
-      <!-- Replace 'image1.jpg', 'image2.jpg', etc., with actual image URLs -->
-      <img src="image1.jpg" alt="Event Design Example 1">
-      <img src="image2.jpg" alt="Wedding Décor Example">
-      <img src="image3.jpg" alt="Floral Creation Example">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.rtUWuZz2qYATMtOksvQp9QHaJ4&pid=Api" alt="Wedding Floral">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.8u7pGXOD0J8vdUNw9VyTbwHaJ4&pid=Api" alt="Event Setup">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.2eU3XVGLZW0IQbeezvVzzgHaJ4&pid=Api" alt="Seasonal Bouquet">
     </div>
-  </div>
+  </section>
 
-  <div class="section" id="contact">
+  <section class="section" id="contact">
     <h2>Contact Us</h2>
-    <p>Email: info@bloomingevents.com</p>
+    <p>Email: <a href="mailto:info@bloomingevents.com">info@bloomingevents.com</a></p>
     <p>Phone: (123) 456-7890</p>
-    <p>Location: London, Ontario</p>
-    <p>Follow us on Instagram: <a href="https://www.instagram.com/bloomingevents.lndn/" target="_blank">@bloomingevents.lndn</a></p>
-  </div>
+    <p>Instagram: <a href="https://www.instagram.com/bloomingevents.lndn/" target="_blank">@bloomingevents.lndn</a></p>
+    <p>Location: London, Ontario, Canada</p>
+  </section>
 
   <footer>
     &copy; 2025 Blooming Events. All rights reserved.
   </footer>
+
 </body>
 </html>
